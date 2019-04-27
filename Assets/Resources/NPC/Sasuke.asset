@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17419cfe72bc0e34ca1574933a1913b1, type: 3}
+  m_Name: Sasuke
+  m_EditorClassIdentifier: 
+  Fullbody: {fileID: 21300000, guid: dc67216e628a77940ac6adf94f1a61bc, type: 3}
+  Face: {fileID: 0}
+  BattleBody: {fileID: 21300002, guid: dc67216e628a77940ac6adf94f1a61bc, type: 3}
+  AttackBody: {fileID: 21300010, guid: dc67216e628a77940ac6adf94f1a61bc, type: 3}
+  Class: {fileID: 11400000, guid: 4bb21a74048862743ba7f60b5ad97574, type: 2}
+  Att: 10
+  Def: 8
+  Int: 8
+  Spd: 9
