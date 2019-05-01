@@ -6,5 +6,7 @@ public class Item : ScriptableObject
 {
     public Sprite Pic;
     public string Description;
-   
+    public enum Type {Weapon, Item, Mist};
+    public int ID;
+    public Type TypeItem;
 }

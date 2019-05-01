@@ -6,7 +6,7 @@ public class MainClass : MonoBehaviour
 {
     public int Gold;
     public List<NPCPro> HeroList;
-    public List<Item> ItemList;
+    public List<ItemPro> ItemList;
     // Start is called before the first frame update
     void Start()
     {
