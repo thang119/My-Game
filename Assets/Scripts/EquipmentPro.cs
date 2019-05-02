@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainClass : MonoBehaviour
+public class EquipmentPro : MonoBehaviour
 {
-    public int Gold;
-    public List<NPCPro> HeroList;
-    public List<ItemPro> EquipmentList,ItemList , MistList;
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +16,3 @@ public class MainClass : MonoBehaviour
         
     }
 }
-
-

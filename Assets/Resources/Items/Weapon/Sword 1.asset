@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sword 1
   m_EditorClassIdentifier: 
   Pic: {fileID: 21300002, guid: 4ae6523f8c18fa84097fa5fdbf5479ce, type: 3}
-  Description: 
+  Description: Peasant Sword
   ID: 0
   TypeItem: 0

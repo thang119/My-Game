@@ -96,7 +96,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5485513165145567585}
           m_MethodName: ForMouseEnter
           m_Mode: 1
           m_Arguments:
@@ -113,7 +113,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5485513165145567585}
           m_MethodName: ForMouseOut
           m_Mode: 1
           m_Arguments:
@@ -378,4 +378,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 11
+  m_Text: 

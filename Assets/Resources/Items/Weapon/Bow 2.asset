@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d66729a075686488fc9d74dfa13a2f, type: 3}
   m_Name: Bow 2
   m_EditorClassIdentifier: 
-  Pic: {fileID: 0}
+  Pic: {fileID: 21300090, guid: 4ae6523f8c18fa84097fa5fdbf5479ce, type: 3}
   Description: 
   ID: 4
   TypeItem: 0

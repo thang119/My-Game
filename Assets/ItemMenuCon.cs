@@ -13,29 +13,33 @@ public class ItemMenuCon : MonoBehaviour
 
     public MainClass Main;
     public GameObject Preb;
+
     public GameObject ListWeapon, ListItem, ListMist;
 
     public List<GameObject> ListMode;
+
+    public Sprite UnknownItem;
+    public string UnknownNameItem;
   //  public 
 
     // Start is called before the first frame update
-    private void OnEnable()
+    private void Start()
     {
-        List<ItemPro> TempList = Main.ItemList.FindAll(x => x.GameItem.TypeItem == Item.Type.Weapon);
-        List<ItemPro> TempList2 = Main.ItemList.FindAll(x => x.GameItem.TypeItem == Item.Type.Item);
-        List<ItemPro> TempList3 = Main.ItemList.FindAll(x => x.GameItem.TypeItem == Item.Type.Mist);
-
-        foreach (var item in TempList)
+        
+        foreach (var item in Main.EquipmentList)
         {
-            ListWeapon.transform.GetChild(item.GameItem.ID).GetComponent<SttItem>().ItemProgress = item;
+            Instantiate(Preb, ListWeapon.transform);           
+            ListWeapon.transform.GetChild(Main.EquipmentList.IndexOf(item)).GetComponent<SttItem>().ItemProgress = item;
         }
-        foreach (var item in TempList2)
+        foreach (var item in Main.ItemList)
         {
-            ListItem.transform.GetChild(item.GameItem.ID).GetComponent<SttItem>().ItemProgress = item;
+            Instantiate(Preb, ListItem.transform);
+            ListItem.transform.GetChild(Main.ItemList.IndexOf(item)).GetComponent<SttItem>().ItemProgress = item;
         }
-        foreach (var item in TempList3)
+        foreach (var item in Main.MistList)
         {
-            ListMist.transform.GetChild(item.GameItem.ID).GetComponent<SttItem>().ItemProgress = item;
+            Instantiate(Preb, ListMist.transform);
+            ListMist.transform.GetChild(Main.MistList.IndexOf(item)).GetComponent<SttItem>().ItemProgress = item;
         }
     }
     private void OnDisable()
@@ -53,7 +57,7 @@ public class ItemMenuCon : MonoBehaviour
         {
             Selected.GetComponent<Image>().color = Selected.StartColor;
             Selected = null;
-
+            
         }
         if (TypeMode == Mode.Weapon)
         {

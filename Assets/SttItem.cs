@@ -16,22 +16,35 @@ public class SttItem : MonoBehaviour, IPointerDownHandler
     // Start is called before the first frame update
     void Start()
     {
-        if (ItemProgress.GameItem!=null)
-        {
-            StartColor = GetComponent<Image>().color;
+        StartColor = GetComponent<Image>().color;
 
-            ItemName.text = ItemProgress.GameItem.name;
-            Amount.text = ItemProgress.Amount.ToString();
 
-            ItemIcon.sprite = ItemProgress.GameItem.Pic;
-        }
-        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    private void LateUpdate()
+    {
+        if (ItemProgress.GameItem != null && ItemProgress.Unlocked)
+        {
 
+            ItemName.text = ItemProgress.GameItem.name;
+            if (ItemProgress.GameItem.TypeItem == Item.Type.Item)
+            {
+                Amount.text = ItemProgress.Amount.ToString();
+
+            }
+            ItemIcon.sprite = ItemProgress.GameItem.Pic;
+        }
+        else
+        {
+            ItemName.text = Con.UnknownNameItem;
+            Amount.text = "";
+            ItemIcon.sprite = Con.UnknownItem;
+        }
     }
 
     public void ForMouseEnter()

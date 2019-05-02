@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Masamune
   m_EditorClassIdentifier: 
   Pic: {fileID: 21300040, guid: 4ae6523f8c18fa84097fa5fdbf5479ce, type: 3}
-  Description: 
+  Description: Legendary sword
   ID: 7
   TypeItem: 0
